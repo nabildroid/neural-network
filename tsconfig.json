@@ -1,0 +1,10 @@
+{
+    "exclude": ["./node_modules", "functions"],
+    "compilerOptions": {
+        "target": "ESNext",
+        "jsx": "react",
+        "allowSyntheticDefaultImports":true,
+        "module": "CommonJS",
+    },
+
+}

@@ -1,0 +1,50 @@
+{
+	"name": "neural-network",
+	"version": "1.0.0",
+	"description": "simple Deep Neural Netwrok written with Typescript",
+	"scripts": {
+		"webpack": "webpack",
+		"server": "webpack-dev-server --hot --watch --host 0.0.0.0",
+		"dev-serve": "npm run server -- --env.mode development",
+		"dev": "npm run webpack -- --env.mode development --watch",
+		"prod": "npm run webpack -- --env.mode production",
+		"test-dev": "npm run webpack -- --env.mode test",
+		"test": "jest ./tests --watchAll",
+		"bundle-size": "npm run server -- --env.mode bundle-size",
+		"serve": "npm run prod && firebase serve --only hosting",
+		"deploy": "npm run prod && firebase deploy --only hosting"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nabildroid/neural-network.git"
+	},
+	"author": "lakrib nabil",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/nabildroid/neural-network/issues"
+	},
+	"homepage": "https://github.com/nabildroid/neural-network#readme",
+	"devDependencies": {
+		"@babel/core": "^7.8.7",
+		"@babel/preset-env": "^7.8.7",
+		"@babel/preset-typescript": "^7.8.3",
+		"babel-loader": "^8.1.0",
+		"babel-plugin-import": "^1.13.0",
+		"babel-plugin-transform-imports": "^2.0.0",
+		"css-loader": "^3.4.2",
+		"html-webpack-plugin": "^3.2.0",
+		"mini-css-extract-plugin": "^0.9.0",
+		"optimize-css-assets-webpack-plugin": "^5.0.3",
+		"ts-loader": "^6.2.1",
+		"typescript": "^3.8.3",
+		"url-loader": "^4.1.0",
+		"webpack": "^4.42.0",
+		"webpack-bundle-analyzer": "^3.6.1",
+		"webpack-cli": "^3.3.11",
+		"webpack-dev-server": "^3.10.3",
+		"webpack-merge": "^4.2.2"
+	},
+	"dependencies": {
+		"vectorious": "^6.0.0-beta.11"
+	}
+}
